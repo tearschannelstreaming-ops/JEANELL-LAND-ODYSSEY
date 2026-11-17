@@ -1,0 +1,6 @@
+{
+  "name": "S.T.E.A.Reality: The Jeanell Land Odyssey",
+  "description": "An interactive historical simulation and educational puzzle video game exploring aeronautical engineering, financial literacy, and community resilience through the inspiring journey of Jeanell Land.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

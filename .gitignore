@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Exclude oversized/unreferenced uploads from GitHub push (kept locally in AI Studio)
+public/assets/aistudio/*.pdf
+!public/assets/aistudio/Licensing_and_Management_System_f86b6935.pdf
+public/assets/aistudio/17.43811.25_cover__17.436_x_11.25_in__effe5a5d.png
+public/assets/aistudio/image_44ca5101.png
+public/assets/aistudio/One_Stop_Rehabilitation_Center_Articles_of_Incorporation_page_1_ddc7d345.png
+public/assets/aistudio/One_Stop_Rehabilitation_Center_Articles_of_Incorporation_page_3_9c2e2956.png
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.T.E.A.Reality: The Jeanell Land Odyssey</title>
+    <link rel="canonical" href="https://stearealitythejeanelllandodyssey.com/" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="STEAR Safe" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta property="og:url" content="https://stearealitythejeanelllandodyssey.com/" />
+    <meta property="og:title" content="S.T.E.A.Reality: The Jeanell Land Odyssey" />
+    <meta property="og:description" content="An interactive historical simulation and educational puzzle video game exploring aeronautical engineering, financial literacy, and community resilience through the inspiring journey of Jeanell Land." />
+    <meta property="og:image" content="https://stearealitythejeanelllandodyssey.com/screenshots/pwa-wide-ecosystem.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        function isViteHmrError(err, url) {
+          if (!err && !url) return false;
+          var msg = (typeof err === 'string' ? err : (err && err.message) || '').toLowerCase();
+          var stack = ((err && err.stack) || '').toLowerCase();
+          var file = (url || '').toLowerCase();
+          return (
+            msg.includes('websocket') ||
+            msg.includes('ws') ||
+            stack.includes('@vite/client') ||
+            file.includes('@vite/client') ||
+            msg.includes('closed without opened')
+          );
+        }
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isViteHmrError(event.reason)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          if (isViteHmrError(event.error, event.filename) || isViteHmrError(event.message, event.filename)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        var prevOnError = window.onerror;
+        window.onerror = function(msg, url, line, col, error) {
+          if (isViteHmrError(error || msg, url)) {
+            return true;
+          }
+          if (typeof prevOnError === 'function') {
+            return prevOnError.apply(this, arguments);
+          }
+        };
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased font-sans selection:bg-cyan-500/20 selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
